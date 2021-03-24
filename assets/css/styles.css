@@ -123,12 +123,20 @@ img{
   margin-right: var(--mb-2);
 }
 
+.bill{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
 .l-header{
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 5;
   background-color: var(--dark-color-lighten);
 }
 
@@ -335,6 +343,13 @@ img{
 .sneaker__pag{
   padding: .5rem 1rem;
   border: 1px solid var(--dark-color);
+}
+
+.sneaker__pagnow{
+  padding: .5rem 1rem;
+  border: 1px solid lightgray;
+  background-color: var(--dark-color-lighten);
+  color: var(--dark-color-light);
 }
 
 .sneaker__pag:hover{
