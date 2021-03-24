@@ -10,6 +10,11 @@
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <!-- ===== ECOMMERCE ===== -->
+        <link rel="preconnect" href="https://app.snipcart.com">
+        <link rel="preconnect" href="https://cdn.snipcart.com">
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+
         <title>Beli di Berlin</title>
     </head>
     <body>
@@ -34,7 +39,8 @@
                 </div>
 
                 <div class="nav__shop">
-                    <a class="nav__link" href="#footer"><i class='bx bx-shopping-bag' ></i></a>
+                    <a class="nav__link header__checkout snipcart-checkout"><i class='bx bx-shopping-bag' ></i></a>
+                    <span class="snipcart-items-count" style="font-size: medium;">0</span>
                 </div>
             </nav>
         </header>
@@ -42,14 +48,25 @@
         <main class="l-main">
             <!--===== NEW COLLECTION =====-->
             <section class="new section">
-                <h2 class="section-title">WILEY CROSSBODY</h2>
+                <h2 class="section-title">WILLEY CROSSBODY</h2>
+
+                <div class="new__container bd-grid">
+                    <p><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a><br>‎</p>
+                </div>
 
                 <div class="new__container bd-grid">
                     <div class="new__mens">
                         <img src="assets/img/103/1.png" alt="" class="new__mens-img">
                         <h3 class="new__title">Rp 2.799.000</h3>
                         <span class="new__preci">Fossil ZB1329508</span>
-                        <a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a>
+                        <button class="buy-button snipcart-add-item"
+                        data-item-id="103"
+                        data-item-price="2799000"
+                        data-item-url="/"
+                        data-item-name="Willey Crossbody ZB1329508"
+                        data-item-image="assets/img/103/1.png">
+                            Add to Cart
+                        </button>
                     </div>
 
                     <div class="new__sneaker">
@@ -69,6 +86,10 @@
                             <img src="assets/img/103/5.png" alt="" class="new__sneaker-img">
                         </div>
                     </div>
+                </div>
+
+                <div class="new__container bd-grid">
+                    <p><br><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a></p>
                 </div>
             </section>
         </main>
@@ -108,4 +129,19 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!--===== ECOMMERCE =====-->
+        <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+        <div class="bill" hidden id="snipcart" data-api-key="OGEzMGRmNmEtYjJjZS00NDk3LWEwMmUtZjc0MzJkYTUyOTQ5NjM3NTIxMzU5NjA1MTkxNDAw">
+            <billing section="top">
+                <fieldset class="snipcart-form__set">
+                    <div class="snipcart-form__field">
+                        <snipcart-label class="snipcart__font--tiny" for="phone">Phone number</snipcart-label>
+                        <snipcart-input name="phone"></snipcart-input>
+                    </div>
+
+                </fieldset>
+
+            </billing>
+        </div>
     </body>
