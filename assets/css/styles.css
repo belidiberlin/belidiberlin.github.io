@@ -599,7 +599,7 @@ button{
   .new__sneaker{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 25%);
+    grid-template-columns: repeat(2, 50%);
   }
     
   .new__sneaker-img{
