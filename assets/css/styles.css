@@ -302,7 +302,7 @@ button{
 
 .featured__container{
   row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .sneaker{
@@ -479,7 +479,7 @@ button{
 .new__sneaker{
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .new__sneaker-card{
@@ -585,6 +585,44 @@ button{
 }
 
 /* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 375px){
+  .collection__container{
+    grid-template-columns: 415px;
+  }
+
+  .collection__img{
+    width: 260px;
+  }
+
+  .offer__container{
+    grid-template-columns: max-content max-content;
+  }
+
+  .offer__data{
+    text-align: center;
+  }
+
+  .new__mens{
+    align-items: center;
+  }
+
+  .new__sneaker{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .women__container{
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .featured__container{
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
 @media screen and (min-width: 576px){
   .collection__container{
     grid-template-columns: 415px;
