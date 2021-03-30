@@ -601,10 +601,6 @@ button{
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-    
-  .new__sneaker-img{
-    height: 168px;
-  }
 
   .women__container{
     row-gap: 2rem;
