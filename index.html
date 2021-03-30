@@ -6,6 +6,7 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/carousel.css">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -67,33 +68,35 @@
             <section class="featured section" id="featured">
                 <h2 class="section-title">FEATURED</h2>
 
-                <div class="featured__container bd-grid">
-                    <article class="sneaker">
+                <div class="featured__index bd-grid">
+                    
+                    <div class="sneaker">
                         <div class="sneaker__sale">Sale</div>
                         <img src="assets/img/101/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Fossil</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Wiley Crossbody</span>
                         <span class="sneaker__preci" style="font-weight: lighter;">Rp 1.799.000</span>
                         <a href="101.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
+                    </div>
 
-                    <article class="sneaker">
+                    <div class="sneaker">
                         <div class="sneaker__sale">Sale</div>
                         <img src="assets/img/201/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Fossil</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Gabby Watch</span>
                         <span class="sneaker__preci" style="font-weight: lighter;">Rp 2.399.000</span>
                         <a href="201.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
+                    </div>
 
-                    <article class="sneaker">
+                    <div class="sneaker">
                         <div class="sneaker__sale">Sale</div>
                         <img src="assets/img/301/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Nike</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Kyrie 7 Brooklyn Beats</span>
                         <span class="sneaker__preci" style="font-weight: lighter;">Rp 2.399.000</span>
                         <a href="301.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
+                    </div>
+
                 </div>
             </section>
 
@@ -145,20 +148,23 @@
                 </div>
             </section>
 
-            <!--===== NEWSLETTER =====-->
+            <!--===== SUBSCRIBE =====-->
             <section class="newsletter section">
                 <div class="newsletter__container bd-grid">
                     <div>
                         <h3 class="newsletter__title">First 100 Subscribers Get <br> 10% OFF</h3>
-                        <p class="newsletter__description">Get 10% discount for all products just for today!</p>
+                        <p class="newsletter__description">Get 10% discount for all products!</p>
                     </div>
 
-                    <form action="" class="newsletter__subscribe">
-                        <input type="text" placeholder="@email.com" class="newsletter__input">
-                        <a href="#" class="button">Subscribe</a>
+                    <form class="newsletter__subscribe" name="gform" id="gform" target="hidden_iframe" onsubmit="submitted=true;"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSefzO4zyVGJ6526QHHQNfY7YZLoPqFfQixmuKIeOXL1ZrrIeQ/formResponse?">
+                        <input type="email" name="entry.288699321" id="entry.288699321" placeholder="@email.com" class="newsletter__input">
+                        <button type="submit" id="cf-submit">Subscribe</button>
                     </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe"
+                            style="display:none;" onload="if(submitted){redirect()}"></iframe>
                 </div>
-            </section>
         </main>
 
         <!--===== FOOTER =====-->
@@ -175,7 +181,7 @@
                 </div>
 
                 <div class="footer__box">
-                    <h3 class="footer__title">ORDER & DELIVERY</h3>
+                    <h3 class="footer__title">CUSTOMER SERVICE</h3>
                     <ul>
                         <li><i class='bx bxl-whatsapp'></i> +49 163 6786595</a></li>
                         <li><i class='bx bxl-whatsapp'></i> +49 176 65508079</a></li>
@@ -196,6 +202,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/submit.js"></script>
+
 
         <!--===== ECOMMERCE =====-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>

@@ -1,0 +1,12 @@
+.gallery-cell {
+    width: 100%;
+    height: flex;
+    margin-right: 10px;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    color: white;
+  }
