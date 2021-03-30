@@ -602,7 +602,7 @@ button{
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
     .new__sneaker-img{
-    height: 80px;
+    height: 79px;
   }
 
   .women__container{
