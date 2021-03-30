@@ -599,7 +599,11 @@ button{
   .new__sneaker{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+    
+  .new__sneaker-img{
+    height: 121px;
   }
 
   .women__container{
