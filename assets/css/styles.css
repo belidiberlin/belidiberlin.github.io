@@ -585,23 +585,13 @@ button{
 }
 
 /* ===== MEDIA QUERIES =====*/
-@media screen and (min-width: 375px){
-  .collection__container{
-    grid-template-columns: 415px;
-  }
 
-  .collection__img{
-    width: 260px;
-  }
-
-  .offer__container{
-    grid-template-columns: max-content max-content;
-  }
-
-  .offer__data{
-    text-align: center;
-  }
-
+/*iPhone 6 & 6s Portrait*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
   .new__mens{
     align-items: center;
   }
@@ -609,7 +599,7 @@ button{
   .new__sneaker{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
   .women__container{
