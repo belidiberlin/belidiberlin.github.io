@@ -296,7 +296,7 @@ button{
 
 .button-soldout{
   display: inline-block;
-  background-color: red;
+  background-color: #ff0000;
   color: var(--white-color);
   padding: 1.125rem 2rem;
   font-weight: var(--font-medium);
