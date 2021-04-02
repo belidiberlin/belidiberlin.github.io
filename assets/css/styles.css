@@ -351,9 +351,10 @@ button{
   margin-bottom: var(--mb-4);
 }
 
+/*
 .sneaker:hover{
   transform: translateY(-.5rem);
-}
+}*/
 
 .sneaker__pages{
   margin-top: var(--mb-6);
