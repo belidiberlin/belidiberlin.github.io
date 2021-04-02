@@ -32,7 +32,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+                        <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
                         <li class="nav__item"><a href="#collections" class="nav__link">Collections</a></li>
                     </ul>
                 </div>
@@ -64,14 +64,14 @@
                 </div>
             </section>
 
-            <!--===== FEATURED =====-->
-            <section class="featured section" id="featured">
-                <h2 class="section-title">FEATURED</h2>
+            <!--===== NEW =====-->
+            <section class="featured section" id="new">
+                <h2 class="section-title">NEW</h2>
 
-                <div class="featured__index bd-grid">
+                <div class="featured__index gallery js-flickity bd-grid" data-flickity='{ "initialIndex": ".is-initial-select" }'>
                     
-                    <div class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
+                    <div class="sneaker gallery-cell">
+                        <div class="sneaker__sale">New</div>
                         <img src="assets/img/101/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Fossil</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Wiley Crossbody</span>
@@ -79,8 +79,8 @@
                         <a href="101.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
                     </div>
 
-                    <div class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
+                    <div class="sneaker gallery-cell is-initial-select">
+                        <div class="sneaker__sale">New</div>
                         <img src="assets/img/201/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Fossil</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Gabby Watch</span>
@@ -88,8 +88,17 @@
                         <a href="201.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
                     </div>
 
-                    <div class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
+                    <div class="sneaker gallery-cell">
+                        <div class="sneaker__sale">New</div>
+                        <img src="assets/img/301/0.png" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Nike</span>
+                        <span class="sneaker__name" style="font-weight: lighter;">Kyrie 7 Brooklyn Beats</span>
+                        <span class="sneaker__preci" style="font-weight: lighter;">Rp 2.399.000</span>
+                        <a href="301.html" class="button-light">See more <i class='bx bx-right-arrow-alt button-icon'></i></a>
+                    </div>
+
+                    <div class="sneaker gallery-cell">
+                        <div class="sneaker__sale">New</div>
                         <img src="assets/img/301/0.png" alt="" class="sneaker__img">
                         <span class="sneaker__name">Nike</span>
                         <span class="sneaker__name" style="font-weight: lighter;">Kyrie 7 Brooklyn Beats</span>
@@ -203,6 +212,8 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/submit.js"></script>
+        <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/vanilla.js"></script>
 
 
         <!--===== ECOMMERCE =====-->

@@ -6,6 +6,7 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/lightbox.css" >
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -48,18 +49,19 @@
         <main class="l-main">
             <!--===== NEW COLLECTION =====-->
             <section class="new section">
-                <h2 class="section-title">WILLEY CROSSBODY</h2>
+                <h2 class="section-title">WILLEY CROSSBODY</h2> <!--EDIT-->
 
                 <div class="new__container bd-grid">
-                    <p><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a><br>‎</p>
+                    <p><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a><br>‎</p> <!--perhatikan href-->
                 </div>
 
                 <div class="new__container bd-grid">
                     <div class="new__mens">
                         <img src="assets/img/101/1.png" alt="" class="new__mens-img">
-                        <h3 class="new__title">Rp 1.799.000</h3>
-                        <span class="new__preci">Fossil ZB1435848</span>
+                        <h3 class="new__title">Rp 1.799.000</h3> <!--EDIT-->
+                        <span class="new__preci">Fossil ZB1435848</span> <!--EDIT-->
                         <div>
+                            <!--EDIT id/price/name/image--> 
                             <span class="snipcart-add-item button"
                              data-item-id="101"
                              data-item-price="1799000"
@@ -68,31 +70,40 @@
                              data-item-image="assets/img/101/1.png">
                                 Add to Cart
                             </span>
+                            <!--EDIT id/price/name/image-->
                         </div>
                         
                     </div>
 
                     <div class="new__sneaker">
                         <div class="new__sneaker-card">
-                            <img src="assets/img/101/2.png" alt="" class="new__sneaker-img">
+                            <a href="assets/img/101/2_modal.jpg" class="lightbox">
+                            <img src="assets/img/101/2.png" class="new__sneaker-img"> <!--EDIT-->
+                            </a>
                         </div>
 
                         <div class="new__sneaker-card">
-                            <img src="assets/img/101/3.png" alt="" class="new__sneaker-img">
+                            <a href="assets/img/101/3_modal.jpg" class="lightbox">
+                            <img src="assets/img/101/3.png" class="new__sneaker-img"> <!--EDIT-->
+                            </a>
                         </div>
 
                         <div class="new__sneaker-card">
-                            <img src="assets/img/101/4.png" alt="" class="new__sneaker-img">
+                            <a href="assets/img/101/4_modal.jpg" class="lightbox">
+                            <img src="assets/img/101/4.png" class="new__sneaker-img"> <!--EDIT-->
+                            </a>
                         </div>
 
                         <div class="new__sneaker-card">
-                            <img src="assets/img/101/5.png" alt="" class="new__sneaker-img">
+                            <a href="assets/img/101/5_modal.jpg" class="lightbox">
+                            <img src="assets/img/101/5.png" class="new__sneaker-img"> <!--EDIT-->
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="new__container bd-grid">
-                    <p><br><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a></p>
+                    <p><br><a href="handbags1.html" class="button-light"><i class='bx bx-left-arrow-alt button-icon'></i> BACK</a></p> <!--perhatikan href-->
                 </div>
             </section>
         </main>
@@ -133,9 +144,53 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
 
+        <!--===== LIGHTBOX =====-->
+        <script src="assets/js/lightbox.js"></script>
+        <script>
+
+            lightbox('.lightbox', {
+            
+                captions: true,
+            
+                captionsSelector: 'self',
+            
+                captionAttribute: 'title',
+            
+                nav: 'auto',
+            
+                navText: [
+            
+                    '&lsaquo;',
+            
+                    '&rsaquo;'
+            
+                ],
+            
+                close: true,
+            
+                closeText: '&times;',
+            
+                counter: true,
+            
+                keyboard: true,
+            
+                zoom: false,
+            
+                zoomText: '+',
+            
+                docClose: false,
+            
+                swipeClose: true,
+            
+                scroll: false
+            
+            });
+            
+            </script>
+
         <!--===== ECOMMERCE =====-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-        <div class="bill" hidden id="snipcart" data-api-key="OGEzMGRmNmEtYjJjZS00NDk3LWEwMmUtZjc0MzJkYTUyOTQ5NjM3NTIxMzU5NjA1MTkxNDAw">
+        <div class="bill" hidden id="snipcart" data-api-key="OGEzMGRmNmEtYjJjZS00NDk3LWEwMmUtZjc0MzJkYTUyOTQ5NjM3NTIxMzU5NjA1MTkxNDAw"> <!--perhatikan data api key-->
             <billing section="top">
                 <fieldset class="snipcart-form__set">
                     <div class="snipcart-form__field">
