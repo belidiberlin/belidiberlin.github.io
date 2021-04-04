@@ -277,6 +277,20 @@ button{
   transform: translateY(-.25rem);
 }
 
+.button-item{
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 0.7rem 2rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button-item:hover{
+  transform: translateY(-.25rem);
+}
+
 .button-light{
   display: inline-flex;
   color: var(--dark-color);
