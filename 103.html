@@ -64,7 +64,7 @@
                             <!--EDIT id/price/name/image--> 
                             <span class="snipcart-add-item button"
                              data-item-id="103"
-                             data-item-price="1900000"
+                             data-item-price='{"idr": 1900000}'
                              data-item-url="/"
                              data-item-name="Wiley Crossbody ZB1329508"
                              data-item-image="assets/img/103/1.png">
@@ -194,6 +194,7 @@
 
         <!--===== ECOMMERCE =====-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+        <script>Snipcart.api.cart.currency('idr');</script>
         <div class="bill" hidden id="snipcart" data-api-key="OGEzMGRmNmEtYjJjZS00NDk3LWEwMmUtZjc0MzJkYTUyOTQ5NjM3NTIxMzU5NjA1MTkxNDAw"> <!--perhatikan data api key-->
             <billing section="top">
                 <fieldset class="snipcart-form__set">

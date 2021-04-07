@@ -62,7 +62,7 @@
                         <div>
                             <span class="button snipcart-add-item"
                             data-item-id="201"
-                            data-item-price="2399000"
+                            data-item-price='{"idr": 2399000}'
                             data-item-url="/"
                             data-item-name="Gabby ES5070"
                             data-item-image="assets/img/201/1.png">
@@ -134,6 +134,7 @@
 
         <!--===== ECOMMERCE =====-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+        <script>Snipcart.api.cart.currency('idr');</script>
         <div class="bill" hidden id="snipcart" data-api-key="OGEzMGRmNmEtYjJjZS00NDk3LWEwMmUtZjc0MzJkYTUyOTQ5NjM3NTIxMzU5NjA1MTkxNDAw">
             <billing section="top">
                 <fieldset class="snipcart-form__set">
