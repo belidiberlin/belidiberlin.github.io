@@ -16,6 +16,8 @@
         <link rel="preconnect" href="https://cdn.snipcart.com">
         <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 
+        <script src="assets/js/include.js" defer></script>
+
         <title>Beli di Berlin</title>
     </head>
     <body>
@@ -191,7 +193,7 @@
         <!--===== ECOMMERCE =====-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
         <script>Snipcart.api.cart.currency('idr');</script>
-        <div class="bill" hidden id="snipcart" data-api-key="{{ .Site.Params.scApiKey }}"> <!--perhatikan data api key-->
+        <div class="bill" hidden id="snipcart"> <!--perhatikan data api key-->
             <billing section="top">
                 <fieldset class="snipcart-form__set">
                     <div class="snipcart-form__field">
